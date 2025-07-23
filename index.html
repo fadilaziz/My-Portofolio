@@ -6,41 +6,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <title>My-Portofolio</title>
 </head>
 <body>
-    <!--Navbar-->
-    <nav>
-        <div class="logo">
-            <h4>My Portofolio</h4>
-        </div>
-        <div class="toggle-button">
-            <a href="https://github.com/fadilaziz"><i class="icon-button" data-feather="github"></i></a>
-            <a href="https://www.instagram.com/fa_di.ll/"><i class="icon-button" data-feather="instagram"></i></a>
-            <span>|</span>
-            <button id="toggleBtn"><i class="icon-button" data-feather="menu"></i></button>
-        </div>
-        <div class="hidden" id="nav-links">
-            <ul>
-                <div class="profile">
-                    <img src="img/Screenshot_20250722_150435.png" alt="">
-                    <div>
-                        <h5>Muhamad Faidil Aziz</h5>
-                        <p>Web Developer</p>
+    <header>
+        <!--Navbar-->
+        <nav>
+            <div class="logo">
+                <h3>My Portofolio</h3>
+            </div>
+            <div class="toggle-button">
+                <a href="https://github.com/fadilaziz"><i class="icon-button" data-feather="github"></i></a>
+                <a href="https://www.instagram.com/fa_di.ll/"><i class="icon-button" data-feather="instagram"></i></a>
+                <button id="toggleBtn"><i class="icon-button" data-feather="menu"></i></button>
+            </div>
+            <div class="hidden" id="nav-links">
+                <ul>
+                    <div class="profile">
+                        <img src="img/Screenshot_20250722_150435.png" alt="">
+                        <div>
+                            <h4>Muhamad Faidil Aziz</h4>
+                            <p>Web Developer</p>
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <li><a href="#home"> <i class="icon" data-feather="home"></i>Home</a></li>
-                <li><a href="#about"> <i class="icon" data-feather="user"></i>About</a></li>
-                <li><a href="#projects"> <i class="icon" data-feather="briefcase"></i>Projects</a></li>
-                <li><a href="#contact"> <i class="icon" data-feather="mail"></i>Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+                    <hr>
+                    <li><a href="#home"> <i class="icon" data-feather="home"></i>Home</a></li>
+                    <li><a href="#about"> <i class="icon" data-feather="user"></i>About</a></li>
+                    <li><a href="#home"> <i class="icon" data-feather="zap"></i>Skill</a></li>
+                    <li><a href="#projects"> <i class="icon" data-feather="briefcase"></i>Projects</a></li>
+                    <li><a href="#contact"> <i class="icon" data-feather="mail"></i>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!--Hero Section-->
+    <main>
+        <section id="home">
+            <div>
+                <h2>Hi, I,am</h2>
+                <h1>Muhamad Faidil Aziz</h1>
+                <p>I'm a web developer with a passion for creating beautiful and functional websites.</p>
+            </div>
+            <img src="img/personal photo jadi.png" alt="">
+            
+        </section>
+    </main>
 
 
     <script>
