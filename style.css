@@ -5,6 +5,7 @@
 }
 
 .logo h3 {
+    font-size: 30px;
     font-family: pixelify sans;
 }
 
@@ -81,7 +82,7 @@ nav {
     position: fixed;
     right: 0px;
     left: 0px;
-    padding: 15px 20px;
+    padding: 20px 20px;
     border-bottom: rgb(197, 197, 197) 1px solid;
 }
 
@@ -92,7 +93,7 @@ nav {
 #nav-links {
         position: absolute;
         right: 10px;
-        top: 85px;
+        top: 90px;
         flex-direction: column;
         background-color: white;
         padding: 15px;
@@ -119,7 +120,7 @@ nav {
 }
 
 #nav-links > ul > li > a {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -128,9 +129,9 @@ nav {
 
 /* Hero Section*/
 main section {
-    padding: 100px 20px;
+
+    padding: 100px 50px 0px 100px;
     text-align: start;
-    background-color: rgb(240, 240, 240);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,17 +155,74 @@ main section div {
 
 main section h1 {
     font-family: pixelify sans;
-    font-size: 100px;
+    font-size: 90px;
     margin-bottom: 20px;
 }
 
 main section h2 {
     color: rgb(102, 102, 102);
+    font-size: 40px;
 }
 
 main section p {
     color: rgb(102, 102, 102);
+    font-size: 22px;
+    width: 600px;
+}
+
+main section button {
+    background-color: black;
+    padding: 10px 12px 10px 20px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     font-size: 20px;
+    border: none;
+}
+
+/*About Me*/
+
+.about-container {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    width: 100% auto;
+    justify-content: center;
+}
+
+.about-me {
+    width: 85%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about-card {
+    background-color: white;
+    border: rgb(197, 197, 197) 1px solid;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.about-card h1 {
+    font-size:35px;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    font-size:20px;
+    margin-bottom: 20px;
+    color: rgb(102, 102, 102);
+}
+
+.about-card button {
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    font-size: 22px;
+    border-radius: 10px;
 }
 
 
@@ -173,15 +231,14 @@ main section p {
 
 @media screen and (max-width: 600px) {
 
+    .logo h3 {
+        font-size: 25px;
+        font-family: pixelify sans;
+    }
+
     .icon-button {
         width: 19px;
         height: 19px;
-    }
-
-    .profile h4 {
-        font-size: 16px;
-        margin: 0px;
-        font-family: pixelify sans;
     }
 
     .profile p {
@@ -224,28 +281,64 @@ main section p {
     }
 
     /*Hero Section*/
-    main section {
+    #home {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 100% auto;
+        padding: 100px 0px 0px 0px;
+        text-align: center;
+        margin: 0px;
+        max-width: 600px;
+    }
+
+    #home img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #home div {
+    width: 85%;
+    }
+
+    #home div h1 {
+        font-size: 45px;
+        width: auto;
+    }
+
+    #home div h2 {
+        font-size: 30px;
+        width: auto;
+    }
+
+
+    #home div p {
+        width: auto;
+    }
+
+    #home button {
+        width: 100%;
+        padding: 10px 12px;
+        margin-bottom: 25px;
+    }
+
+    #home img {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /*About Me*/
+    .about-card {
         text-align: center;
     }
-
-    main section div {
-        margin: top 30px;
-        margin-bottom: 30px;
-        width: 100%;
+    .about-card h2 {
+        margin-bottom: 15px;
     }
 
-    main section h1 {
-        font-size: 45px;
-    }
-
-    main section p {
-        width: 100%;
-        font-size: 17px;
-    }
-
-    main section img {
-        width: 400px;
+    .about-card p {
+        text-align: justify;
     }
 }
 
