@@ -1,81 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <title>My-Portofolio</title>
-</head>
-<body>
-    <header>
-        <!--Navbar-->
-        <nav>
-            <div class="logo">
-                <h3>My Portofolio</h3>
-            </div>
-            <div class="toggle-button">
-                <a href="https://github.com/fadilaziz"><i class="icon-button" data-feather="github"></i></a>
-                <a href="https://www.instagram.com/fa_di.ll/"><i class="icon-button" data-feather="instagram"></i></a>
-                <button id="toggleBtn"><i class="icon-button" data-feather="menu"></i></button>
-            </div>
-            <div class="hidden" id="nav-links">
-                <ul>
-                    <div class="profile">
-                        <img src="img/Screenshot_20250722_150435.png" alt="">
-                        <div>
-                            <h4>Muhamad Faidil Aziz</h4>
-                            <p>Web Developer</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <li><a href="#home"> <i class="icon" data-feather="home"></i>Home</a></li>
-                    <li><a href="#about"> <i class="icon" data-feather="user"></i>About</a></li>
-                    <li><a href="#home"> <i class="icon" data-feather="zap"></i>Skill</a></li>
-                    <li><a href="#projects"> <i class="icon" data-feather="briefcase"></i>Projects</a></li>
-                    <li><a href="#contact"> <i class="icon" data-feather="mail"></i>Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <script>
+      function toggleMenu() {
+        const wrapper = document.querySelector(".wrapper");
+        wrapper.classList.toggle("hidden");
 
-    <!--Hero Section-->
-    <main>
-        <section id="home">
-            <div>
-                <h2>Hi, I,am</h2>
-                <h1>Muhamad Faidil Aziz</h1>
-                <p>I'm a web developer with a passion for creating beautiful and functional websites.</p>
-                <button>My work <i class="icon" data-featbackground-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247background-color: rgb(247, 247, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);, 247);her="arrow-up-right"></i></button>
-                <span></span>
-            </div>
-            <img src="img/personal photo jadi.png" alt="">
-            
-        </section>
-    </main>
+        document.addEventListener("click", function (event) {
+          const menuButton = document.getElementById("menu");
+          if (!wrapper.contains(event.target) && event.target !== menuButton) {
+            wrapper.classList.add("hidden");
+          }
+        });
+      }
+    </script>
+    <style>
+        body {
+            font-family: Pixelify Sans;
+        }
 
-    <!--About Me-->
-    <section class="about-container">
-        <div class="about-me">
-            <div class="about-card">
-                <h1>About Me</h1>
-                <h2>Who I Am, What I Do..?</h2>
-                <p>Hello, My Name Is Fadil I’m someone who is passionate about the world of technology, especially programming and graphic design.What Do I Do..? I continuously learn and improve my skills by working on personal projects, joining training programs, and actively exploring creative ideas that can be applied through applications, websites, or visual designs. For me, technology is not just a tool — it's a medium to express solutions and innovation.</p>
-                <button>Download CV</button>
+        .personal-photo{
+            width: 600px;
+            width: 600px;
+        }
+    </style>
+  </head>
+  <body class="font-[Poppins] bg-white text-gray-800">
+    <nav class="flex items-center justify-between px-6 py-4 shadow-md sticky top-0 bg-white z-50">
+      <a href=""><h2 class="text-2xl font-bold">Portofolio</h2></a>
+      <div class="">
+        <ul class="wrapper hidden md:flex gap-6 items-center absolute top-20 right-2 left-20  bg-black p-5 rounded-lg shadow-xl md:static md:p-0 md:shadow-none md:bg-white lg:static lg:p-0 lg:shadow-none lg:bg-white ">
+            <div class="flex mb-5 align-middle md:hidden lg:hidden">
+                <img class="w-10 h-10 mr-3 rounded-full" src="img/Desain tanpa judul (1).jpg" alt="">
+                <div class="flex flex-col ">
+                    <span class="font-bold text-white">Muhamad Faidil Aziz</span>
+                    <p class="text-sm text-gray-400">Junior Web Developer</p>
+                </div>
             </div>
+            <hr class="mb-3 text-gray-500">
+          <li><a href="" class="text-lg text-white hover:text-black md:text-gray-500 lg:text-gray-500">Home</a></li>
+          <li><a href="" class="text-lg text-white hover:text-black md:text-gray-500 lg:text-gray-500">About</a></li>
+          <li><a href="" class="text-lg text-white hover:text-black md:text-gray-500 lg:text-gray-500">Skill</a></li>
+          <li><a href="" class="text-lg text-white hover:text-black md:text-gray-500 lg:text-gray-500">Creation</a></li>
+          <li><a href="https://wa.me/6281917536832?text=Halo%20saya%20tertarik%20dengan%20layanan%20Anda">
+              <button class="text-lg mt-3  bg-black color-white text-white px-4 py-2 rounded-full">Hubungi Saya</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="bg-black px-6 py-1 rounded-full text-white md:hidden lg:hidden" id="menu" onclick="toggleMenu()" class="md:hidden">menu</button>
+    </nav>
+
+    <!---Hero Section-->
+    <section class="hero-section px-6 pt-12 flex flex-col md:flex-row items-center gap-10 lg:justify-center">
+      <div data-aos="fade-up" data-aos-duration="2000" class="text-center md:text-left lg:justify-center">
+        <h2 class="text-3xl font-bold text-gray-500">Hi, I'm</h2>
+        <h1 class="text-5xl md:text-6xl font-bold">Muhammad Faidil Aziz</h1>
+        <p class="mt-4 max-w-md text-xl text-gray-500 lg:text-xl">
+          I am someone who is interested in the world of Programming and Graphic Design.
+        </p>
+        <div class="w-full flex gap-3 align-middle justify-center md:justify-start lg:justify-start">
+            <button class="text-xl mt-6 bg-black px-6 text-white px-4 py-2 rounded-full">My Work</button>
+            <button class="text-xl mt-6 bg-gray-400 px-6 text-white px-4 py-2 rounded-full">Project</button>
         </div>
+      </div>
+      <div>
+        <img class="personal-photo"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="w-full max-w-xs md:max-w-sm"
+        src="img/Personal (1).png"
+        alt=""
+      />
+      </div>
     </section>
 
+    <!--About-->
+    <section class="bg-gray-100 py-20 px-6">
+      <div class="max-w-5xl mx-auto px-6 bg-black rounded-2xl py-12 text-center lg:text-start px-12">
+        <h2 class="text-white text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-400 mb-6">
+          I am someone with a strong interest in the world of technology and graphic design. I am passionate about learning coding and graphic design to create engaging and meaningful works.
+        </p>
+        <a href="img/Portofolio.pdf" download>
+          <button class="bg-white px-6 text-black px-4 py-2 rounded-full">Download CV</button>
+        </a>
+      </div>
+    </section>
+
+    <!--Skill-->
+    <section class="py-20 bg-white">
+      <article class="max-w-6xl mx-auto px-6">
+        <div data-aos="fade-up" data-aos-duration="2000" class="text-center mb-10">
+          <span class="uppercase text-blue-600 font-bold py-1 px-3 bg-black text-white rounded-full mb-5 text-sm">My Skill</span>
+          <h2 class="text-3xl font-bold mt-3">Creative Skills in Tech & Design</h2>
+          <p class="mt-2">Blending technology and visual art to create impactful digital experiences.</p>
+        </div>
+        <div class="flex flex-wrap gap-5 justify-center items-center">
+          <div class="py-8 text-center flex flex-col items-center w-36 bg-gray-100 p-4 rounded-lg shadow-md" data-aos="fade-up" data-aos-duration="2000">
+            <img src="img/HTML.png" class="w-10 h-auto h-16 mb-4" alt="HTML">
+            <h2 class="font-bold text-lg">HTML</h2>
+            <p class="text-sm text-gray-500"><!----></p>
+          </div>
+          <div class="py-8 text-center flex flex-col items-center w-36 bg-gray-100 p-4 rounded-lg shadow-md" data-aos="fade-up" data-aos-duration="2000">
+            <img src="img/CSS.png" class="w-10 h-auto h-16 mb-4" alt="HTML">
+            <h2 class="font-bold text-lg">CSS</h2>
+            <p class="text-sm text-gray-500"><!----></p>
+          </div>
+          <div class="py-8 text-center flex flex-col items-center w-36 bg-gray-100 p-4 rounded-lg shadow-md" data-aos="fade-up" data-aos-duration="2000">
+            <img src="img/PhotoShop.png" class="w-10 h-auto h-16 mb-4" alt="HTML">
+            <h2 class="font-bold text-lg">PhotoShop</h2>
+            <p class="text-sm text-gray-500"><!----></p>
+          </div>
+          <div class="py-8 text-center flex flex-col items-center w-36 bg-gray-100 p-4 rounded-lg shadow-md" data-aos="fade-up" data-aos-duration="2000">
+            <img src="img/CSS.png" class="w-10 h-auto h-16 mb-4" alt="HTML">
+            <h2 class="font-bold text-lg">CSS</h2>
+            <p class="text-sm text-gray-500"><!----></p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="bg-gray-100 py-20">
+      <div class="max-w-6xl mx-auto px-6" data-aos="fade-up" data-aos-duration="2000">
+        <span class="uppercase text-blue-600 font-bold text-sm bg-black py-1 px-3 rounded-full text-white">Creation</span>
+        <div class="mb-10">
+          <h2 class="text-3xl font-bold mt-3">A Collection of Works Representing My Journey and Expression</h2>
+          <p class="mt-2">My work combines photography and graphic design to convey emotions, visual stories, and powerful messages.</p>
+        </div>
+        <h2 class="text-xl font-semibold mb-6">Photography</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="hal-karya.html" class="block bg-white shadow-md rounded-2xl overflow-hidden">
+            <img src="img/IMG_20250710_110811.jpg" alt="">
+            <div class="p-4">
+              <h2 class="font-bold text-xl mb-5">Stop Action Photography</h2>
+              <p class="text-gray-500">Tools : Canon EOS 700D <br>
+                ISO : 100 <br>
+                Aperture : f4 <br>
+                ShutterSpeed : 1/60s <br>
+             </p>
+            </div>
+          </a>
+          <div class="block bg-white shadow-md rounded-2xl overflow-hidden">
+            <img src="img/IMG_20250710_110828.jpg" alt="">
+            <div class="p-4">
+              <h2 class="font-bold text-lg text-xl mb-5">Product Photography</h2>
+              <p class="text-gray-500">Tools : Canon EOS 700D <br>
+                ISO : 100 <br>
+                Aperture : f5.0 <br>
+                ShutterSpeed : 1/1000s <br>
+             </p>
+            </div>
+          </div>
+          <div class="block bg-white shadow-md rounded-2xl overflow-hidden">
+            <img src="img/IMG_20250710_110851.jpg" alt="">
+            <div class="p-4">
+              <h2 class="font-bold text-lg text-xl mb-5">Human Interest Photography</h2>
+              <p class="text-gray-500">Tools : Canon EOS M50 <br>
+                ISO : 125 <br>
+                Aperture : f2.8 <br>
+                ShutterSpeed : 1/640s <br>
+             </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white py-10">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold">Portofolio</h2>
+        <p class="mb-6">Explore my work and get in touch!</p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <ul>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Home</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">About</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Skill</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Creation</a></li>
+          </ul>
+          <ul>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Programming</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">About</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Skill</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Creation</a></li>
+          </ul>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis quam ea fuga reprehenderit amet.</p>
+          </div>
+        </div>
+        <hr class="my-6" />
+        <p class="text-center text-sm font-bold">© 2025 Portofolio. By Muhamad Faidil Aziz.</p>
+      </div>
+    </footer>
 
     <script>
-        feather.replace();
+      AOS.init();
+      feather.replace();
     </script>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      function toggleMenu() {
+        const wrapper = document.querySelector(".wrapper");
+        wrapper.classList.toggle("hidden");
+
+        document.addEventListener("click", function (event) {
+          const menuButton = document.getElementById("menu");
+          if (!wrapper.contains(event.target) && event.target !== menuButton) {
+            wrapper.classList.add("hidden");
+          }
+        });
+      }
+    </script>
+  </head>
+  <body class="font-[Poppins] bg-white text-gray-800">
+    <nav
+      class="flex items-center justify-between px-6 py-4 shadow-md sticky top-0 bg-white z-50"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <a href=""><h2 class="text-2xl font-bold">Portofolio</h2></a>
+      <div>
+        <ul class="wrapper hidden md:flex gap-6 items-center">
+          <li><a href="" class="hover:text-blue-500">Home</a></li>
+          <li><a href="" class="hover:text-blue-500">About</a></li>
+          <li><a href="" class="hover:text-blue-500">Skill</a></li>
+          <li><a href="" class="hover:text-blue-500">Creation</a></li>
+          <li>
+            <a
+              href="https://wa.me/6281917536832?text=Halo%20saya%20tertarik%20dengan%20layanan%20Anda"
+            >
+              <button class="bg-blue-600 text-white px-4 py-2 rounded">Hubungi Saya</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button id="menu" onclick="toggleMenu()" class="md:hidden">menu</button>
+    </nav>
+
+    <section class="hero-section px-6 py-20 flex flex-col md:flex-row items-center gap-10">
+      <div data-aos="fade-up" data-aos-duration="2000" class="text-center md:text-left">
+        <h2 class="text-lg">Hi, I'm</h2>
+        <h1 class="text-4xl md:text-5xl font-bold">Muhammad Faidil Aziz</h1>
+        <p class="mt-4 max-w-md">
+          I am someone who is interested in the world of Programming and Graphic Design.
+        </p>
+        <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded">My Work</button>
+      </div>
+      <img
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="w-full max-w-xs md:max-w-sm animate-bounce"
+        src="img/Desain tanpa judul (1).jpg"
+        alt=""
+      />
+    </section>
+
+    <section class="bg-gray-100 py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="mb-6">
+          I am someone with a strong interest in the world of technology and graphic design. I am passionate about learning coding and graphic design to create engaging and meaningful works.
+        </p>
+        <a href="img/Portofolio.pdf" download>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded">Download CV</button>
+        </a>
+      </div>
+    </section>
+
+    <video
+      id="myVideo"
+      width="320"
+      height="240"
+      autoplay
+      loop
+      muted
+      playsinline
+      class="mx-auto"
+    >
+      <source src="img/Banking-app-[remix] (2).webm" type="video/mp4" />
+      Browser Anda tidak mendukung video.
+    </video>
+
+    <section class="py-20 bg-white">
+      <article class="max-w-6xl mx-auto px-6">
+        <div data-aos="fade-up" data-aos-duration="2000" class="text-center mb-10">
+          <span class="uppercase text-blue-600 font-bold">My Skill</span>
+          <h2 class="text-3xl font-bold">Creative Skills in Tech & Design</h2>
+          <p class="mt-2">Blending technology and visual art to create impactful digital experiences.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-duration="2000">
+            <img src="img/html-5.png" class="h-16 mb-4" alt="HTML">
+            <h2 class="font-bold text-lg">HTML</h2>
+            <p>Membuat struktur dasar konten halaman web secara rapi.</p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-duration="2000">
+            <img src="img/CSS-Logo.png" class="h-16 mb-4" alt="CSS">
+            <h2 class="font-bold text-lg">CSS</h2>
+            <p>Membuat tampilan halaman web dengan desain menarik.</p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-duration="2000">
+            <img src="img/Adobe-Photoshop-Logo-2015-2019.png" class="h-16 mb-4" alt="Photoshop">
+            <h2 class="font-bold text-lg">Photoshop</h2>
+            <p>Mengedit dan membuat desain grafis visual yang kreatif.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="bg-gray-100 py-20">
+      <div class="max-w-6xl mx-auto px-6" data-aos="fade-up" data-aos-duration="2000">
+        <span class="uppercase text-blue-600 font-bold">Creation</span>
+        <div class="mb-10">
+          <h2 class="text-3xl font-bold">A Collection of Works Representing My Journey and Expression</h2>
+          <p class="mt-2">My work combines photography and graphic design to convey emotions, visual stories, and powerful messages.</p>
+        </div>
+        <h2 class="text-xl font-semibold mb-6">Photography</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="hal-karya.html" class="block bg-white shadow-md rounded overflow-hidden">
+            <img src="img/IMG_20250710_110811.jpg" alt="">
+            <div class="p-4">
+              <h2 class="font-bold text-lg">Stop Action Photography</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </a>
+          <div class="block bg-white shadow-md rounded overflow-hidden">
+            <img src="img/IMG_20250710_110828.jpg" alt="">
+            <div class="p-4">
+              <h2 class="font-bold text-lg">Product Photography</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="block bg-white shadow-md rounded overflow-hidden">
+            <img src="img/IMG_20250710_110851.jpg" alt="">
+            <div class="p-4">
+              <h2 class="font-bold text-lg">Human Interest Photography</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white border-t py-10">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold">Portofolio</h2>
+        <p class="mb-6">Explore my work and get in touch!</p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <ul>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Home</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">About</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Skill</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Creation</a></li>
+          </ul>
+          <ul>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Programming</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">About</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Skill</a></li>
+            <li class="mb-2"><a href="" class="hover:text-blue-500">Creation</a></li>
+          </ul>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis quam ea fuga reprehenderit amet.</p>
+          </div>
+        </div>
+        <hr class="my-6" />
+        <p class="text-center text-sm">© 2025 Portofolio. By Muhamad Faidil Aziz.</p>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init();
+      feather.replace();
+    </script>
+  </body>
+</html>
