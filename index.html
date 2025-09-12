@@ -16,19 +16,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-      function toggleMenu() {
-        const wrapper = document.querySelector(".wrapper");
-        wrapper.classList.toggle("hidden");
-
-        document.addEventListener("click", function (event) {
-          const menuButton = document.getElementById("menu");
-          if (!wrapper.contains(event.target) && event.target !== menuButton) {
-            wrapper.classList.add("hidden");
-          }
-        });
-      }
-    </script>
     <style>
         body {
             font-family: Pixelify Sans;
@@ -59,8 +46,8 @@
     </style>
   </head>
   <body class="font-[Poppins] bg-white text-gray-800">
-    <nav class="flex items-center justify-between px-6 py-4 border-b-1 border-gray-200 sticky top-0 bg-white z-50">
-      <a href=""><h2 class="text-2xl font-bold">Portofolio</h2></a> 
+    <nav class="flex items-center justify-between px-6 py-2 border-1 border-black sticky top-0 z-50 rounded-full bg-white top-3 mx-5 lg:py-3 lg:pr-3">
+      <a href=""><h2 class="text-xl font-bold">Portofolio</h2></a> 
       <div class="">
         <ul class="wrapper hidden md:flex gap-6 items-center absolute top-20 right-2 left-20 bg-white border-1 border-black p-5 rounded-lg shadow-xl transition-transform duration-500 md:static md:p-0 md:shadow-none md:bg-white lg:static lg:p-0 lg:shadow-none lg:bg-white lg:border-0 lg:items-center transition-all duration-500 ease-in-out animate__animated" style="animation-duration: 0.5s;">
           <div class="flex mb-5 align-middle md:hidden lg:hidden">
@@ -76,7 +63,7 @@
               <li><a href="#skill" class="float text-lg text-gray-500 hover:text-black md:text-gray-500 lg:text-gray-500">Skill</a></li>
               <li><a href="#creation" class="float text-lg text-gray-500 hover:text-black md:text-gray-500 lg:text-gray-500">Creation</a></li>
               <li><a href="https://wa.me/6281917536832?text=Halo%20saya%20tertarik%20dengan%portofolio%20Anda">
-              <button class="text-lg hidden mt-3  bg-black color-white text-white px-4 py-2 rounded-full lg:block">Contact Me</button>
+              <button class="text-lg hidden mt-3  bg-black color-white text-white px-4 py-2 rounded-full lg:block lg:mt-0">Contact Me</button>
             </a>
           </li>
         </ul>
@@ -102,7 +89,7 @@
         data-aos="fade-up"
         data-aos-duration="2000"
         class="w-full max-w-xs md:max-w-sm"
-        src="img/Personal.png"
+        src="img/personal.png"
         alt=""
       />
       </div>
@@ -111,7 +98,7 @@
     <!--About-->
     <section id="about" class="bg-gray-200 py-20 px-6 z-2">
       <div class="max-w-5xl mx-auto px-3 bg-black rounded-2xl py-12 text-center lg:text-start px-12">
-        <h2 class="text-white text-3xl font-bold mb-4">About Me text</h2>
+        <h2 class="text-white text-3xl font-bold mb-4">About Me</h2>
         <p class="text-gray-400 mb-6 text-xl">
           I am someone with a strong interest in the world of technology and graphic design. I am passionate about learning coding and graphic design to create engaging and meaningful works.
         </p>
@@ -258,7 +245,7 @@
         <p class="text-center text-sm font-bold text-gray-500 mb-2">© 2025 Portofolio | By Muhamad Faidil Aziz.</p>
       </div>
     </footer>
-
+    <script src="script.js"></script>
     <script>
       AOS.init();
       feather.replace();
