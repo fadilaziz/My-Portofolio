@@ -9,3 +9,10 @@ function toggleMenu() {
         }
     });
 }
+
+const tombolContact = document.querySelector('.tombol-dropDown');
+const dropDown = document.querySelector('.dropDown');
+
+tombolContact.addEventListener('click', function(event) {
+    dropDown.classList.toggle('hidden');
+});
