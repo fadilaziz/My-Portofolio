@@ -24,3 +24,11 @@
         .font-pixel {
         font-family: "Pixelify Sans", sans-serif;
         }
+
+        .bg-primary {
+            background-color: #f0e9e1;
+        }
+
+        .font-primary-color {
+            color: #f0e9e1;
+        }
